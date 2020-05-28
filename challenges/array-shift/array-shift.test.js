@@ -1,6 +1,6 @@
 'use strict';
 
-const reverse = require('./array-shift.js');
+const insertShiftArray = require('./array-shift.js');
 
 describe('insertShiftArray()', () => {
   it('can insert odd array', () => {
@@ -13,6 +13,6 @@ describe('insertShiftArray()', () => {
     let arr = ['thank','you','alot','for every thing'];
     let val = 'mai';
     expect(arr).not.toEqual(insertShiftArray(arr,val));
-    expect(insertShiftArray(arr,val)).toEqual(['thank','you','mai','alot','for every thing']);
+    expect(insertShiftArray(arr,val)).toEqual(["thank","you","mai","alot","for every thing"]);
   });
 });
