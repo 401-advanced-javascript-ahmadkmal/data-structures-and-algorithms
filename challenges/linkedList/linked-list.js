@@ -39,5 +39,49 @@ class LinkedList {
         }
         return str;
     }
+    append(value) {
+      const node = new Node(value);
+      if (!this.head) {
+        this.head = node;
+        return this;
+      }
+      let currentNode = this.head;
+      while (currentNode.previous) {
+        currentNode = currentNode.previous;
+      }
+      currentNode.previous = node;
+      return this;
+    }
+    insertBefore(value, newVal){
+      const node = new Node(newVal);
+      let currentNode = this.head;
+      if(currentNode.value===value){
+        node.previous=this.head;
+        this.head=node;
+        return
+      }
+      while(currentNode.previous.value!==value){
+        if(!currentNode.previous.previous)
+          return 
+        currentNode=currentNode.previous;
+      
+      }
+      node.previous=currentNode.previous;
+      currentNode.previous=node;
+      return
+    }
+    insertAfter(value, newVal){
+      const node = new Node(newVal);
+      let currentNode = this.head;
+      while(currentNode.value!==value){
+        if(!currentNode.previous)
+          return 
+        currentNode=currentNode.previous;
+        
+      }
+      node.previous=currentNode.previous;
+      currentNode.previous=node;
+      return
+    }
 
 }
