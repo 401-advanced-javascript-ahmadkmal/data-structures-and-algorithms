@@ -83,5 +83,21 @@ class LinkedList {
       currentNode.previous=node;
       return
     }
+    kthFromEnd(k){
+      let cunt =0;
+      while (currentNode.previous) {
+        currentNode = currentNode.previous;
+        cunt++;
+      }
+      if(cunt<k)
+        return false;
+
+      while (cunt-k) {
+        currentNode = currentNode.previous;
+        cunt--;
+      }
+      return currentNode.value
+    }
+
 
 }
