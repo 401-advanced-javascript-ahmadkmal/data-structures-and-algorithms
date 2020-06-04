@@ -49,6 +49,7 @@ function mergeLists(list1,list2){
             }
             currentNode3.next = node;
             node.next=currentNode2.next;
+            break;
         }
         if(currentNode2.next===null){
             const node = new Node(currentNode.value);
@@ -58,6 +59,7 @@ function mergeLists(list1,list2){
             }
             currentNode3.next = node;
             node.next=currentNode.next;
+            break;
         }
         count++;
     }
