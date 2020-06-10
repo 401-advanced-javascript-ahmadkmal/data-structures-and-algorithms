@@ -15,3 +15,4 @@ function multiBracketValidation (input) {
   }
   return !stack.top;
 }
+multiBracketValidation('[[]](()){}');
