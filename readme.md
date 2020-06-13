@@ -9,3 +9,4 @@
 |stacksAndQueues   | [click](./challenges/stacksAndQueues/readme.md)            |
 |psedoqueue   | [click](./challenges/queueWithStacks/readme.md)            |
 |AnimalShelter   | [click](./challenges/fifoAnimalShelter/readme.md)            |
+|tree   | [click](./challenges/tree/readme.md)            |
