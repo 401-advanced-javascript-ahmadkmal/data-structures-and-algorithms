@@ -7,4 +7,5 @@
 |reversed arrat     | [click](./challenges/array-reverse/readme.md)            |
 |array shift     | [click](./challenges/array-shift/readme.md)            |
 |stacksAndQueues   | [click](./challenges/stacksAndQueues/readme.md)            |
-|psedoqueue   | [click](.challenges/queueWithStacks/readme.md)            |
+|psedoqueue   | [click](./challenges/queueWithStacks/readme.md)            |
+|AnimalShelter   | [click](./challenges/fifoAnimalShelter/readme.md)            |
