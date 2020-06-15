@@ -39,7 +39,24 @@ class BinaryTree {
   }
 }
 
-
+// eslint-disable-next-line no-unused-vars
+class Breadth_first extends BinaryTree{
+  breadth(tree){
+    const arrOfVal =tree.value?[tree.value]:[];
+    const traverse=(arr)=>{
+      let tempArr = [];
+      arr.forEach(node => {
+        tempArr.push(node.left);
+        arrOfVal.push(node.left.value);
+        tempArr.push(node.right);
+        arrOfVal.push(node.right.value);
+      });
+      if(tempArr.length>0) traverse(tempArr);
+    };
+    traverse([tree]);
+    return arrOfVal;
+  }
+}
 
 class BinarySearchTree {
   constructor(root) {
