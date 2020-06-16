@@ -56,8 +56,23 @@ class Breadth_first extends BinaryTree{
     traverse([tree]);
     return arrOfVal;
   }
-}
+};
 
+class findMaximumValue extends BinaryTree{
+  
+  
+  max(tree){
+    let max = tree.value;
+    const _traversal = (node) => {
+      max =node.value>max ?node.value:max;
+      if (node.left) _traversal(node.left);
+      if (node.right) _traversal(node.right);
+    };
+    _traversal(tree);
+    return max;
+  }
+
+}
 class BinarySearchTree {
   constructor(root) {
     this.root = root;

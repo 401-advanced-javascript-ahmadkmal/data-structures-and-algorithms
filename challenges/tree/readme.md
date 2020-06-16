@@ -25,4 +25,5 @@ it is really efficient to search about number it will reduce the big o for time 
 ![Whiteboard](../../assets/tree2.jpg)
 ![Whiteboard](../../assets/tree1.jpg)
 ![whiteboard](../../assets/breadth.jpg)
+![whiteboard](../../assets/max.jpg)
 
