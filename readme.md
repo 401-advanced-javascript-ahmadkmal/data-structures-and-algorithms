@@ -11,3 +11,4 @@
 |AnimalShelter   | [click](./challenges/fifoAnimalShelter/readme.md)            |
 |tree   | [click](./challenges/tree/readme.md)            |
 |fizzbuzztree   | [click](./challenges/fizzBuzzTree/readme.md)            |
+|sort  | [click](./challenges/sort/blog.md)            |
