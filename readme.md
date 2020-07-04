@@ -13,3 +13,4 @@
 |fizzbuzztree   | [click](./challenges/fizzBuzzTree/readme.md)            |
 |sort  | [click](./challenges/sort/blog.md)            |
 |quicksort  | [click](./challenges/sort/blog3.md)            |
+|hashtable  | [click](./challenges/hashtable/readme.md)            |
