@@ -14,3 +14,4 @@
 |sort  | [click](./challenges/sort/blog.md)            |
 |quicksort  | [click](./challenges/sort/blog3.md)            |
 |hashtable  | [click](./challenges/hashtable/readme.md)            |
+|repeat | [click](./challenges/repeatedWord/readme.md)            |
