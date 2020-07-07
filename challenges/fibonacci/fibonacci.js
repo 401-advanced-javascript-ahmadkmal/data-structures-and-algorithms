@@ -6,11 +6,11 @@ const fibo = argv.fibo;
 var fiboarr=[0,1];
 // console.log(fibo,argv,process.argv);
 function fibonacci(fibo){
-    for (let index = 2; index <= fibo; index++) {
-        fiboarr[index]=fiboarr[index-1]+fiboarr[index-2];
+  for (let index = 2; index <= fibo; index++) {
+    fiboarr[index]=fiboarr[index-1]+fiboarr[index-2];
         
-    }
-    console.log(fiboarr[fibo]);
+  }
+  console.log(fiboarr[fibo]);
 }
 
 fibonacci(fibo);
