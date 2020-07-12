@@ -104,3 +104,6 @@ class Node {
     hashmap.storage[3923].head.value['name'],
     hashmap.storage[2118].head.next
   );
+  hashmap.storage.forEach(element => {
+    console.log('element---->',element)
+  });
