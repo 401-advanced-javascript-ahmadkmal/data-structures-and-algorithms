@@ -45,8 +45,8 @@ class Graph {
     printAll() {
         // console.log(this._adjancyList.entries());
         for (const [vertex, edge] of this._adjancyList.entries()) {
-            console.log("V ====> ", vertex);
-            console.log("E ====>" , edge);
+            // console.log("V ====> ", vertex);
+            // console.log("E ====>" , edge);
         }
     }
     size(){
@@ -86,17 +86,34 @@ class Graph {
         
         return vistedNodes;
 
+    }
+    getEdge(arr){
+        const cost = 0
+        for (let index = 0; index < arr.length-1; index++) {
+            for (const [vertex, edge] of this._adjancyList.entries()) {
+                if (vertex.value==arr[index]){
+                     console.log("E ====>" , edge);
+                     let nextCity = '';
+                     edge.forEach(element => {
+                        console.log("element ====>" , element.vertex.value,element.weight);
+                        if (element.vertex.value==arr[index+1]){
+                            cost = element.weight;
+                        }
+                     });
+                     if (nextCity == ''){
+                        return  ` false , 0 $` 
+                     }
+                }
+         
+            }
+         
+  
+            
+        }
+           return `true , ${cost} $`
+  
 
     }
-
-    dfs() {
-
-    }
-
-    pathTo() {
-
-    }
-
 
 
 }
@@ -130,10 +147,11 @@ graph.addDirectedEdge(eight, seven);
 // console.log(graph);
 
 graph.printAll();
-console.log("==================================================")
-console.log('Neighbors: ', graph.getNeighbors(ten));
+// console.log("==================================================")
+// console.log('Neighbors: ', graph.getNeighbors(ten));
 
 
 
-console.log("***********************************************")
+// console.log("***********************************************")
 graph.bfs(ten);
+graph.getEdge([3])
