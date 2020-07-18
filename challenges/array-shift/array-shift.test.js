@@ -1,6 +1,6 @@
 'use strict';
 
-const reverse = require('./array-shift.js');
+const insertShiftArray = require('./array-shift.js');
 
 describe('insertShiftArray()', () => {
   it('can insert odd array', () => {
