@@ -49,6 +49,13 @@ class Graph {
             console.log("E ====>" , edge);
         }
     }
+    size(){
+        let size = 0
+        for (const [vertex, edge] of this._adjancyList.entries()) {
+         size++;
+        }
+        return size
+    }
 
 
     bfs(startNode) {
