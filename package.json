@@ -4,7 +4,8 @@
   "description": "* This repo belong to **Ahmad Kmal** ![ahmad kmal](76638483_10219918505896882_4825513838591868928_n.jpg)",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --coverage --verbose",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,14 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-ahmadkmal/data-structures-and-algorithms#readme",
   "dependencies": {
-    "eslint": "^7.1.0",
     "jest": "^26.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }
