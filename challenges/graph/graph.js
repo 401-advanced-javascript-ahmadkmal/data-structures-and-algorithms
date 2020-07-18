@@ -87,6 +87,35 @@ class Graph {
         return vistedNodes;
 
     }
+    dfs(startNode) {
+        const stack = []; // Behaviour of the queue: first in first out 
+        const vistedNodes = new Set(); // track the nodes that we visited
+
+        stack.push(startNode);
+        
+
+        while (stack.length) {
+            const currentNode = stack.pop();
+
+            const neighbors = this.getNeighbors(currentNode);
+            
+            for (let neighbor of neighbors) {
+                const neighborNode = neighbor.vertex;
+                if(vistedNodes.has(neighborNode)) {
+                    continue;
+                } else {
+                    vistedNodes.add(neighborNode);
+                }
+                stack.push(neighborNode);
+            }
+
+        }
+        vistedNodes.add(startNode);
+        console.log({vistedNodes});
+        
+        return vistedNodes;
+
+    }
     getEdge(arr){
         const cost = 0
         for (let index = 0; index < arr.length-1; index++) {
